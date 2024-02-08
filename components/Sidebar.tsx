@@ -12,7 +12,7 @@ type SidebarProps = {
   children: React.ReactNode;
 };
 
-const Sidebar: React.FC<SidebarProps> = ({ children: _children }) => {
+const Sidebar: React.FC<SidebarProps> = ({ children }) => {
   const pathname = usePathname();
 
   const routes = useMemo(
@@ -45,6 +45,7 @@ const Sidebar: React.FC<SidebarProps> = ({ children: _children }) => {
         </Box>
         <Box className="h-full overflow-y-auto">Song Library</Box>
       </div>
+      <main className="h-full flex-1 overflow-y-auto py-2">{children}</main>
     </div>
   );
 };
