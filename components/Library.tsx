@@ -1,5 +1,3 @@
-"use client";
-
 import { AiOutlinePlus } from "react-icons/ai";
 import { BiLibrary } from "react-icons/bi";
 
